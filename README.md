@@ -5,6 +5,8 @@ The NASA data set comprises different size NACA 0012 airfoils at various wind tu
 
 Attribute Information:
 
+
+
 This problem has the following inputs: 
 1. Frequency, in Hertzs. 
 2. Angle of attack, in degrees. 
