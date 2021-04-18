@@ -10,20 +10,20 @@ from PIL import Image
 
 # loading the trained model
 #model_path = "/content/RFModel.pkl"
-scaler_path = "/content/scaler.pkl"
+scaler_path = "./scaler.pkl"
 #model = pickle.load(open(model_path, 'rb'))
 scaler = pickle.load(open(scaler_path, 'rb'))
 
 def model_selection(model):
   import pickle
   if model == "Linear Regression":
-    model_path = "/content/LRModel.pkl"
+    model_path = "./LRModel.pkl"
   elif model == "K Nearest Neighbor":
-    model_path = "/content/KNNModel.pkl"
+    model_path = "./KNNModel.pkl"
   elif model == "Random Forest":
-    model_path = "/content/RFModel.pkl"
+    model_path = "./RFModel.pkl"
   else:
-    model_path = "/content/XGBModel.pkl"
+    model_path = "./XGBModel.pkl"
   
   model = pickle.load(open(model_path, 'rb'))
 
